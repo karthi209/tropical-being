@@ -1,0 +1,64 @@
+div.logotext {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 100%;
+  margin-bottom: 0.8rem;
+  font-size:38px;
+  letter-spacing: 5px;
+  /* border: 2px solid; */
+  padding: 15px;
+  background-color: bisque;
+  
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    margin: -14px auto;
+    max-width: 100%;
+    font-size: medium;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    /* border: 2px solid; */
+    padding: 10px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .navbar-links li {
+    margin: auto 4rem;
+    padding: 0.5rem;
+    padding-right: 10%;
+  }
+
+  .navbar-links li:hover {
+    background-color: whitesmoke;
+    transform: scale(1.1);
+  }
+
+  .selected {
+    background-color: whitesmoke; /* Color of the selected item */
+  }
+
+  .navbar-links a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    .navbar {
+      display: none;
+    };
+
+    .styleMenu {
+      display: flex;
+
+    }
+  }

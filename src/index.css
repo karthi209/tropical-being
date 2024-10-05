@@ -1,0 +1,19 @@
+:root {
+  font-family: 'Open Sans';
+  color: rgba(32, 32, 32, 0.87);
+  background-color: #fbfff8;
+  letter-spacing: 1px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: rgba(32, 32, 32, 0.87);
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
