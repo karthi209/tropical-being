@@ -1,26 +1,21 @@
 div.logotext {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin: auto;
-  max-width: 100%;
-  margin-bottom: 0.8rem;
-  font-size:38px;
+  font-size:22px;
   letter-spacing: 5px;
-  /* border: 2px solid; */
   padding: 15px;
-  background-color: bisque;
-  
+  font-weight: 500;
 }
 
 .navbar {
     display: flex;
-    justify-content: left;
-    margin: -14px auto;
-    max-width: 100%;
+    justify-content: space-between;
+    margin: 15px auto;
+    max-width: 80%;
     font-size: medium;
     margin-bottom: 0.8rem;
-    font-weight: bold;
-    /* border: 2px solid; */
+    font-weight: regular;
     padding: 10px;
   }
   
@@ -33,8 +28,6 @@ div.logotext {
   
   .navbar-links li {
     margin: auto 4rem;
-    padding: 0.5rem;
-    padding-right: 10%;
   }
 
   .navbar-links li:hover {

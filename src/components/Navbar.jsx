@@ -13,11 +13,14 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="logotext">madras mapper.</div>
       <nav className="navbar">
+        <div className="logotext">tropical being.</div>
         <ul className="navbar-links">
+          <li className={selectedItem === 'home' ? 'selected' : ''} onClick={() => handleItemClick('home')}>
+            <Link to="/">Home</Link>
+          </li>
           <li className={selectedItem === 'blog' ? 'selected' : ''} onClick={() => handleItemClick('blog')}>
-            <Link to="/">Blog</Link>
+            <Link to="/blog">Blog</Link>
           </li>
           <li className={selectedItem === 'maps' ? 'selected' : ''} onClick={() => handleItemClick('maps')}>
             <Link to="/maps">Maps</Link>
