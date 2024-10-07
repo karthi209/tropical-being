@@ -3,3 +3,11 @@ div.pages-custom {
     padding-top: 7vh;
     max-width: 60%;
   }
+
+@media only screen and (max-width: 768px) {
+  div.pages-custom {
+    margin: auto;
+    padding-top: 0vh;
+    max-width: 85%;
+  }
+}
