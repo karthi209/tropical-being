@@ -1,5 +1,5 @@
 :root {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   color: rgba(32, 32, 32, 0.87);
   background-color: #ffffff;
   letter-spacing: 1px;
@@ -8,17 +8,4 @@
 body, html {
   margin: 0;
   padding: 0;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: rgba(32, 32, 32, 0.87);
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
