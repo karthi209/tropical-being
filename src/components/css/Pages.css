@@ -1,13 +1,17 @@
 div.pages-custom {
-    margin: -15px auto;
-    padding-top: 7vh;
+    margin: 0 auto; /* Remove negative margin */
+    padding-top: 15px; /* Use padding to create space */
     max-width: 60%;
   }
+
+.post-class {
+  list-style: none;
+}
 
 @media only screen and (max-width: 768px) {
   div.pages-custom {
     margin: auto;
-    padding-top: 0vh;
+    padding-top: 0; /* Adjust as needed */
     max-width: 85%;
   }
 }

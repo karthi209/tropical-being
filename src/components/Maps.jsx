@@ -1,4 +1,5 @@
 import React from 'react'
+import './css/Pages.css';
 
 function Maps() {
   return (

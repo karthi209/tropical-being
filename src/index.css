@@ -5,7 +5,16 @@
   letter-spacing: 1px;
 }
 
+#root {
+  width: 100%;
+  margin: auto;
+}
+
 body, html {
   margin: 0;
   padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }

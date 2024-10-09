@@ -5,7 +5,6 @@ import Home from './components/Home';
 import Blog from './components/Blog';
 import Maps from './components/Maps';
 import About from './components/About';
-import './App.css';
 
 function App() {
   return (

@@ -1,7 +1,9 @@
 import React from 'react';
 import './css/Pages.css';
+import { useState } from 'react';
 
 function Home() {
+
   return (
     <div className='pages-custom'>
       <h4>Home</h4>
