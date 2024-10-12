@@ -1,26 +1,26 @@
 [
-    {
-      "slug": "post1",
-      "title": "The Madras Electric Tramways",
-      "date": "2024-10-12",
-      "image": "/posts/post-thumbnails/post-thumbnail-1.webp"
-    },
-    {
-      "slug": "post2",
-      "title": "Another Great Post",
-      "date": "2024-03-21",
-      "image": "/posts/post-thumbnails/post-thumbnail-2.webp"
-    },
-    {
-      "slug": "post3",
-      "title": "Pedestrains!",
-      "date": "2024-03-22",
-      "image": "/posts/post-thumbnails/post-thumbnail-3.jpg"
-    },
-    {
-      "slug": "post4",
-      "title": "Wow, a blog to test stuff? No no and a big no on how they do that",
-      "date": "2024-03-22",
-      "image": "/posts/post-thumbnails/post-thumbnail-3.jpg"
-    }
-  ]
+  {
+    "slug": "post1",
+    "title": "The Madras Electric Tramways",
+    "date": "2024-10-12",
+    "image": "posts/post-thumbnails/post-thumbnail-1.webp"
+  },
+  {
+    "slug": "post2",
+    "title": "Another Great Post",
+    "date": "2024-03-21",
+    "image": "posts/post-thumbnails/post-thumbnail-2.webp"
+  },
+  {
+    "slug": "post3",
+    "title": "Pedestrains!",
+    "date": "2024-03-22",
+    "image": "posts/post-thumbnails/post-thumbnail-3.jpg"
+  },
+  {
+    "slug": "post4",
+    "title": "Wow, a blog to test stuff? No no and a big no on how they do that",
+    "date": "2024-03-22",
+    "image": "posts/post-thumbnails/post-thumbnail-3.jpg"
+  }
+]

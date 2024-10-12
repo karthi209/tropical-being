@@ -1,4 +1,3 @@
-// src/routes/Blog.jsx
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useParams, Link, useNavigate } from 'react-router-dom';
@@ -51,7 +50,6 @@ const BlogList = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        // Assuming you have a posts.json file in public folder that contains metadata
         const response = await fetch(`${import.meta.env.VITE_BASE_PATH}posts/posts.json`);
         const data = await response.json();
         setPosts(data);
@@ -61,7 +59,6 @@ const BlogList = () => {
     };
 
     fetchPosts();
-
   }, []);
 
   return (
@@ -71,7 +68,7 @@ const BlogList = () => {
         {posts.map((post) => (
           <article key={post.slug} className='articleclass'>
             <Link to={`/blog/${post.slug}`} aria-label={`Read more about ${post.title}`}>
-              <img src={post.image} alt={post.title} />
+              <img src={`${import.meta.env.VITE_BASE_PATH}${post.image}`} alt={post.title} />
               <h4>
                 {post.title}
               </h4>
