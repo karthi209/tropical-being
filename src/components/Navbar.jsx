@@ -9,13 +9,13 @@ const Navbar = () => {
   // Effect to set the initial selected item based on the current URL
   useEffect(() => {
     const currentPath = location.pathname; // Use location.pathname directly
-    if (currentPath === '/tropical-being') {
+    if (currentPath === '/') {
       setSelectedItem('home');
-    } else if (currentPath === '/tropical-being/blog') {
+    } else if (currentPath === '/blog') {
       setSelectedItem('blog');
-    } else if (currentPath === '/tropical-being/maps') {
+    } else if (currentPath === '/maps') {
       setSelectedItem('maps');
-    } else if (currentPath === '/tropical-being/about') {
+    } else if (currentPath === '/about') {
       setSelectedItem('about');
     } else {
       setSelectedItem(null); // Clear selection for unmatched paths
@@ -32,16 +32,16 @@ const Navbar = () => {
       <div className="logotext">tropical being.</div>
       <ul className="navbar-links">
         <li className={selectedItem === 'home' ? 'selected' : ''}>
-          <Link to="/tropical-being" onClick={() => handleItemClick('home')}>Home</Link>
+          <Link to="/" onClick={() => handleItemClick('home')}>Home</Link>
         </li>
         <li className={selectedItem === 'blog' ? 'selected' : ''}>
-          <Link to="/tropical-being/blog" onClick={() => handleItemClick('blog')}>Blog</Link>
+          <Link to="/blog" onClick={() => handleItemClick('blog')}>Blog</Link>
         </li>
         <li className={selectedItem === 'maps' ? 'selected' : ''}>
-          <Link to="/tropical-being/maps" onClick={() => handleItemClick('maps')}>Maps</Link>
+          <Link to="/maps" onClick={() => handleItemClick('maps')}>Maps</Link>
         </li>
         <li className={selectedItem === 'about' ? 'selected' : ''}>
-          <Link to="/tropical-being/about" onClick={() => handleItemClick('about')}>About</Link>
+          <Link to="/about" onClick={() => handleItemClick('about')}>About</Link>
         </li>
       </ul>
     </nav>

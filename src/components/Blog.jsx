@@ -16,14 +16,14 @@ const BlogPost = () => {
       try {
         const response = await fetch(`/posts/${slug}.md`);
         if (!response.ok) {
-          navigate('/tropical-being/blog');
+          navigate('/blog');
           return;
         }
         const text = await response.text();
         setPost(text);
       } catch (error) {
         console.error('Error loading post:', error);
-        navigate('/tropical-being/blog');
+        navigate('/blog');
       }
     };
 
@@ -33,7 +33,7 @@ const BlogPost = () => {
   return (
     <div className='master-blog'>
       <div className="pages-individual">
-        <Link to="/tropical-being/blog">
+        <Link to="/blog">
           ← Back to Posts
         </Link>
         <article className="blog">
@@ -70,7 +70,7 @@ const BlogList = () => {
       <div className="blogposts">
         {posts.map((post) => (
           <article key={post.slug} className='articleclass'>
-            <Link to={`/tropical-being/blog/${post.slug}`} aria-label={`Read more about ${post.title}`}>
+            <Link to={`/blog/${post.slug}`} aria-label={`Read more about ${post.title}`}>
               <img src={post.image} alt={post.title} />
               <h4>
                 {post.title}

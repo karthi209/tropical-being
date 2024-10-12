@@ -1,6 +1,5 @@
 import React from 'react';
 import './css/Pages.css';
-import { useState } from 'react';
 
 function Home() {
 
