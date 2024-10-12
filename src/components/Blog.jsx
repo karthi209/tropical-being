@@ -14,7 +14,7 @@ const BlogPost = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await fetch(`/posts/${slug}.md`);
+        const response = await fetch(`${import.meta.env.VITE_BASE_PATH}posts/${slug}.md`);
         if (!response.ok) {
           navigate('/blog');
           return;
@@ -52,7 +52,7 @@ const BlogList = () => {
     const fetchPosts = async () => {
       try {
         // Assuming you have a posts.json file in public folder that contains metadata
-        const response = await fetch('/posts/posts.json');
+        const response = await fetch(`${import.meta.env.VITE_BASE_PATH}posts/posts.json`);
         const data = await response.json();
         setPosts(data);
       } catch (error) {
