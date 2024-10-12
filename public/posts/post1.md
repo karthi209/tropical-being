@@ -1,7 +1,7 @@
 
 ## The Madras Electric Tramways
 
-![Test Image](../images/the-madras-tramway-network.webp)
+![Test Image](/tropical-being/posts/images/the-madras-tramway-network.webp)
 
 
 The Madras Tramway Proposals were put forward by the Madras Government in 1857 for ‘experiments for using tramways instead of common roads were being carried out in the Madras Territories and may be used in the Punjab.
