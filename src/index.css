@@ -3,6 +3,7 @@
   color: rgba(32, 32, 32, 0.87);
   background-color: #ffffff;
   letter-spacing: 1px;
+  overflow-y: scroll;
 }
 
 #root {
@@ -18,3 +19,5 @@ body, html {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+

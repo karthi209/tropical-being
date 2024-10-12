@@ -1,6 +1,6 @@
 div.logotext {
   display: flex;
-  font-size: 26px;
+  font-size: 28px;
   letter-spacing: 7px;
   font-weight: 600;
   padding: 15px; /* Padding around the logo text */
@@ -10,14 +10,12 @@ div.logotext {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
-    max-width: 75%;
     padding: 10px;
-    margin: 15px auto 0.8rem auto;
-    font-size: medium;
-    font-size: 18px;
+    margin: 18px auto;
+    font-size: 20px;
     font-weight: 500;
-    min-height: 60px;
+    max-width: 1200px;
+    width: 100%;
   }
   
   .navbar-links {
@@ -51,8 +49,9 @@ div.logotext {
   @media only screen and (max-width: 768px) {
 
     .navbar {
-      width: 100%;
+      width: 90%;
       padding: 5px;
+      padding-bottom: 0;
       flex-wrap: wrap;
       margin: 10px 5%;
       justify-content: center;
@@ -76,7 +75,5 @@ div.logotext {
       margin: 0; /* Ensures there's no margin around list items */
       padding: 10px 2vw;
     }
-
-
   
   }
