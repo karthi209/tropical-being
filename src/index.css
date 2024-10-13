@@ -1,9 +1,25 @@
+/* Default light theme (set in :root) */
 :root {
-  font-family: "Barlow Condensed", sans-serif;
-  color: rgba(32, 32, 32, 0.87);
-  background-color: #fffafa;
-  letter-spacing: 1px;
+  --background-color: #FEF9F2;
+  --text-color: rgba(50, 50, 50, 0.87);
+  --link-color: rgba(50, 50, 50, 0.87);  /* Define default link color */
+  font-family: "Geologica", sans-serif;
   overflow-y: scroll;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --background-color: #1d1d1d;
+  --text-color: #f5f5f5;
+  --link-color: #f5f5f5;
+}
+
+/* Ensure links use the correct theme color */
+a {
+  color: var(--link-color);
 }
 
 #root {
@@ -20,4 +36,7 @@ body, html {
   box-sizing: border-box;
 }
 
-
+/* Optional: Add transition for smooth theme change */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

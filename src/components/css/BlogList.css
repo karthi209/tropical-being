@@ -11,8 +11,8 @@
 }
 
 .blogposts a {
-    color: black;
-    text-decoration: none;
+    color: var(--text-color);
+    text-decoration: none; /* Optional: remove underline */
 }
 
 .blogposts time {
@@ -60,8 +60,7 @@
     .articleclass {
         margin: 0;
         padding: 0;
-        max-width: 85vw;
-        min-width: 85vw;
+        max-width: 100%;
     }
 
  }

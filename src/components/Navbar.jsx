@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './css/Navbar.css';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [selectedItem, setSelectedItem] = useState(null); // State to keep track of the selected item
@@ -28,23 +29,27 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="logotext">tropical being.</div>
-      <ul className="navbar-links">
-        <li className={selectedItem === 'home' ? 'selected' : ''}>
-          <Link to="/" onClick={() => handleItemClick('home')}>Home</Link>
-        </li>
-        <li className={selectedItem === 'blog' ? 'selected' : ''}>
-          <Link to="/blog" onClick={() => handleItemClick('blog')}>Blog</Link>
-        </li>
-        <li className={selectedItem === 'maps' ? 'selected' : ''}>
-          <Link to="/maps" onClick={() => handleItemClick('maps')}>Maps</Link>
-        </li>
-        <li className={selectedItem === 'about' ? 'selected' : ''}>
-          <Link to="/about" onClick={() => handleItemClick('about')}>About</Link>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <nav className="navbar">
+        <div className="logotext">tropical being.</div>
+        <Link className='mobile-icon'><ThemeToggle /></Link>
+          <ul className="navbar-links">
+            <li className={selectedItem === 'home' ? 'selected' : ''}>
+              <Link to="/" onClick={() => handleItemClick('home')}>home</Link>
+            </li>
+            <li className={selectedItem === 'blog' ? 'selected' : ''}>
+              <Link to="/blog" onClick={() => handleItemClick('blog')}>blog</Link>
+            </li>
+            <li className={selectedItem === 'maps' ? 'selected' : ''}>
+              <Link to="/maps" onClick={() => handleItemClick('maps')}>maps</Link>
+            </li>
+            <li className={selectedItem === 'about' ? 'selected' : ''}>
+              <Link to="/about" onClick={() => handleItemClick('about')}>about</Link>
+            </li>
+          </ul>
+        <Link className='pc-icon'><ThemeToggle /></Link>
+      </nav>
+    </>
   );
 };
 

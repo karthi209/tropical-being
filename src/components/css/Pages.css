@@ -2,18 +2,29 @@ div.pages-custom {
   margin: 0 auto;
   padding: 25px;
   font-size: 17px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Geologica", sans-serif;
   font-weight: 400;
   line-height: 23px;
   letter-spacing: normal;
-  color: #383839;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
+}
+
+.under-construction {
+  font-family: "Edu AU VIC WA NT Dots", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
 }
 
 div.pages-custom h3 {
   padding: 0 20px;
   text-align: center;
+}
+
+.responsive-image {
+  width: 100px;
 }
 
 .post-class {
@@ -24,11 +35,10 @@ div.pages-custom h3 {
   margin: 0 auto;
   padding: 25px;
   font-size: 17px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Geologica", sans-serif;
   font-weight: 400;
   line-height: 23px;
   letter-spacing: normal;
-  color: #383839;
   max-width: 1000px;
   width: 100%;
 }
@@ -37,11 +47,39 @@ div.pages-custom h3 {
   text-align: justify;
 }
 
+.footer-custom {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.footer-terms {
+  margin: 10px;
+  margin-top: 0;
+}
+
+.footer-logo {
+  margin: 10px;
+}
+
+.foticon {
+  margin: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   div.pages-custom {
-    margin: auto;
-    padding: 0 auto; /* Adjust as needed */
-    max-width: 85%;
+    margin: 0;
+    padding: auto; /* Adjust as needed */
+    max-width: 100%;
   }
 
   .master-blog {
