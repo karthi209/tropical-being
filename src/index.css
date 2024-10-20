@@ -1,6 +1,6 @@
 /* Default light theme (set in :root) */
 :root {
-  --background-color: #FEF9F2;
+  --background-color: #ffffff;
   --text-color: rgba(50, 50, 50, 0.87);
   --link-color: rgba(50, 50, 50, 0.87);  /* Define default link color */
   font-family: "Geologica", sans-serif;

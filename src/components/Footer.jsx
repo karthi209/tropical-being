@@ -9,7 +9,6 @@ function Footer() {
     <div className='footer-custom'>
       <div className='footer-terms'>
         <p>Terms of Use</p>
-        <p>Privacy Policy</p>
       </div>
       <p>© 2024 Tropical Being</p>
       <div className='footer-logo'>

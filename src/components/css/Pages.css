@@ -3,7 +3,7 @@ div.pages-custom {
   padding: 25px;
   font-size: 17px;
   font-family: "Geologica", sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 23px;
   letter-spacing: normal;
   max-width: 1200px;
@@ -36,7 +36,7 @@ div.pages-custom h3 {
   padding: 25px;
   font-size: 17px;
   font-family: "Geologica", sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 23px;
   letter-spacing: normal;
   max-width: 1000px;
@@ -45,6 +45,8 @@ div.pages-custom h3 {
 
 .master-blog p {
   text-align: justify;
+  font-weight: 300;
+  
 }
 
 .footer-custom {
@@ -89,5 +91,36 @@ div.pages-custom h3 {
 
   div.pages-custom h3 {
     display: none;
+  }
+
+  .footer-custom {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: small;
+    font-weight: 300;
+  }
+  
+  .footer-text {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 30px;
+  }
+  
+  .footer-terms {
+    margin: 10px;
+    margin-top: 0;
+  }
+  
+  .footer-logo {
+    margin: 0px;
+    margin-right: 10px;
+  }
+  
+  .foticon {
+    margin: 10px;
   }
 }

@@ -1,14 +1,31 @@
 import React from 'react';
 import './css/Pages.css';
+import { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
+import "./css/BlogList.css"
 
-function Home() {
+const Home = () => {
+
+  const [home, setHome] = useState('');
+
+  useEffect(() => {
+    const fetchHome = async () => {
+      try {
+        const response = await fetch(`${import.meta.env.VITE_BASE_PATH}home.md`);
+        const text = await response.text();
+        setHome(text);
+      } catch (error) {
+        console.error('Error loading post:', error);
+      }
+    };
+    fetchHome();
+  }, []);
 
   return (
     <div className='pages-custom'>
-      <p className='under-construction'>Website under construction</p>
-      {/* <img src='/chennai.png' className="responsive-image" />     */}
+      <ReactMarkdown className='blog'>{home}</ReactMarkdown>
     </div>
-  )
-}
+  );
+};
 
 export default Home
